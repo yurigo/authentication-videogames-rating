@@ -1,0 +1,37 @@
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "login" : "dave",
+    "password" : "dave"
+}
+
+###
+
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+    "login": "dave",
+    "name" : "Dave",
+    "password" : "dave"
+}
+
+###
+
+GET http://localhost:3000/users
+
+
+###
+
+GET http://localhost:3000/users/5
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpZCI6NCwibG9naW4iOiJkYXZlIiwibmFtZSI6IkRhdmUifQ.zonU40GjojlJ_Mh8bDLwTORGMZbMLi9kmv6K18zc3UQ
+
+###
+
+GET http://localhost:3000/videogames
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpZCI6NCwibG9naW4iOiJkYXZlIiwibmFtZSI6IkRhdmUifQ.zonU40GjojlJ_Mh8bDLwTORGMZbMLi9kmv6K18zc3UQ
+
+###
+
+GET http://localhost:3000/videogames/5
